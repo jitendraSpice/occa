@@ -1,0 +1,148 @@
+<div class="pageWrapper">
+    <div class="dahsbrTopAlert">
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <div class="courseSec">
+                    <span class="corseTitle">My Course</span>
+                    <circle-progress [percent]="40" [radius]="70" [outerStrokeWidth]="16" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#71C3FF'" [innerStrokeColor]="'#0094FF'" [animation]="true"
+                        [animationDuration]="300"></circle-progress>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="courseSec">
+                    <span class="corseTitle">Test Score</span>
+                    <circle-progress [percent]="60" [radius]="70" [outerStrokeWidth]="16" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#40DABE'" [innerStrokeColor]="'#fff'" [animation]="true"
+                        [animationDuration]="300" [title]="'54.5% 5 Test'"></circle-progress>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="courseSec">
+                    <span class="corseTitle">Validity Left</span>
+                    <circle-progress [percent]="80" [radius]="70" [outerStrokeWidth]="16" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#9FCD45'" [innerStrokeColor]="'#40DABE '" [animation]="true"
+                        [animationDuration]="300" [title]="'90 days'" [titleFontSize]="'27'"></circle-progress>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="btnRightain">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button mat-raised-button>
+                                <span class="material-icons">playlist_play</span>Playlist</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button mat-raised-button>
+                                <span class="material-icons">history</span>Watch History</button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button mat-raised-button class="liveBtn">
+                            <span class="material-icons">live_tv</span>Live Class</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="lessionWrapper">
+        <div class="lessionHeader">
+            <div class="lessionLeft">
+                <span class="text-primary">Level 1 </span> Business
+            </div>
+            <div class="lessionRight">
+                 Basics : <span class="text-primary">Chapter 1</span>
+            </div>
+        </div>
+        <div class="bgCHnage" *ngFor="let d of [1,2,3,4,5,6,7,8]">
+            <div class="levelItem">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="mainBoxSec no-padding">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="thumbnailImage">
+                                        <img src="./../../../assets/images/chapter.png" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 videoTitleSec">
+                                    <span class="lessionTitle">Lesson-1</span>
+                                    <div class="description">Role Of Work Structure</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mainBoxSec">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="watchSec">
+                                        <span class="lastWatch">Last Watch </span>
+                                        <div class="arrows">:</div>
+                                        <div class="timing">23 : 01 : 2022</div>
+                                    </div>
+                                    <div class="watchSec WatchTime">
+                                        <span class="lastWatch">Watch Time</span>
+                                        <div class="arrows">:</div>
+                                        <div class="timing text-success">18 : 34 : (70%)</div>
+                                    </div>
+                                    <div class="watchSec">
+                                        <span class="lastWatch">Views</span>
+                                        <div class="arrows">:</div>
+                                        <div class="timing text-primary views">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mainBoxSec">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="studyMaterail">
+                                        <span class="lastWatch">Study Material</span>
+                                        <button mat-stroked-button class="lastWatch">
+                                            <span class="material-icons">cloud_download</span>
+                                        </button>
+                                        <div class="date lastWatch">
+                                            23 : 01 : 2022
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mainBoxSec">
+                           <div class="row">
+                            <div class="col-12">
+                                <div class="studyMaterail">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="48" height="48" fill="url(#pattern0)" />
+                                        <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                                height="1">
+                                                <use xlink:href="#image0_1_134" transform="scale(0.0078125)" />
+                                            </pattern>
+                                            <image id="image0_1_134" width="128" height="128"
+                                                xlink:href="data:image/png;base64,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" />
+                                        </defs>
+                                    </svg>
+                                    <div class="watchSec WatchTime">
+                                        <span class="lastWatch">Test Score</span>
+                                        <div class="arrows px-3">:</div>
+                                        <div class="timing text-success">4.5 (90%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

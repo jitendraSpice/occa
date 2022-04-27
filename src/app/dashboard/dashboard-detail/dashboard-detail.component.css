@@ -1,0 +1,98 @@
+.lessionHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 17px 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+ .btnRightain button{height: 50px;font-size: 18px;width: 100%;margin-bottom: 17px;display: flex;align-items: center;justify-content: center;border: 1px solid #CCCCCC;}
+ .btnRightain button .material-icons{margin-right: 7px;}
+ .btnRightain .liveBtn{background: #D82121;color: #fff;box-shadow: none;}
+.corseTitle{color: #323232;font-size: 21px;font-weight: 600;margin-right: 30px;}
+.courseSec {display: flex;align-items: center;border-right: 1px solid #ccc;}
+.pageWrapper{margin: 20px;}
+.dahsbrTopAlert {
+    padding-bottom: 20px;
+}
+.lessionWrapper {
+    background: #fff;
+    margin: 0 -33px 0 -20px;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.bgCHnage{
+    background: #F2F6FE;
+    padding: 40px 26px 0 26px;
+}
+.bgCHnage:last-child{
+    padding-bottom: 40px;
+}
+.levelItem .lessionTitle {
+    color: #FB6900;
+    font-size: 19px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+}
+.levelItem .description {
+    color: #3B5070;
+    font-weight: 500;
+    font-size: 17px;
+}
+.mainBoxSec{background: #FFFAF3;border: 5px solid #fff;height: 100%;padding: 10px 20px;}
+.mainBoxSec.no-padding{padding: 0;}
+.videoTitleSec{display: flex;flex-direction: column;align-items: flex-start;justify-content: center;}
+.levelItem{background: #FBFBFB;}
+.watchSec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2E2F2F;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.studyMaterail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2E2F2F;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 4px 0;
+}
+.studyMaterail .mat-stroked-button{line-height: 1;}
+.studyMaterail .lastWatch{padding: 5px 0;}
+.studyMaterail button{border: 2px solid #255287;}
+
+.lessionWrapper::-webkit-scrollbar-track
+{
+ box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.lessionWrapper::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.lessionWrapper::-webkit-scrollbar-thumb
+{
+	background-color: #FB6900;
+}
+.mainBoxSec .row{padding: 0;align-items: center;}
+.thumbnailImage img{height: 127px;}
+
+
+@media (max-width: 767px){
+    .courseSec{border-right: 0;}
+    .lessionHeader{font-size: 19px;}
+    .bgCHnage{padding: 30px 15px 0 15px;}
+    .thumbnailImage img{width: 100%;height: auto;}
+    .videoTitleSec{padding: 10px 15px;}
+    .lessionWrapper{height: auto;overflow: auto;margin: 0; padding: 20px;}
+    .pageWrapper{padding: 15px;margin: 0;}
+  }

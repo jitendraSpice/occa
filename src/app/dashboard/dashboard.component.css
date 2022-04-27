@@ -1,0 +1,141 @@
+.usrMainDetls .userName {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 16px;
+  display: block;
+}
+.avatar {
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+  }
+  .avatar__image {
+    height: 100%;
+    width: 100%;
+  }
+  .avatar__letter {
+    font-weight: 600;
+    width: 100%;
+  }
+  .rightDetl {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.bell .material-icons{font-size: 29px;}
+.bell {
+  padding-right: 33px;
+  border-right: 2px solid #CCCCCC;
+  margin-right: 33px;
+}
+  .usrMainDetls {
+    display: flex;
+    align-items: center;
+    width: auto;
+    cursor: pointer;
+}
+.mat-icon-button{width: auto;height: auto;}
+.header {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgb(0 0 0 / 25%);
+  padding: 13px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* dashboard css  */
+.dashboard_wrapper {
+  /* background: #f1f1f1; */
+  height: auto;
+  min-height: 100%;
+}
+.dashPanelLeft {
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 85px;
+  background: #03192E;
+  width: 160px;
+  z-index: 1001;
+  transition: all .1s ease;
+  overflow-y: auto;
+}
+.dashPanelRight {
+  /* position: relative;
+  top: 78px; */
+  background: #f1f1f1;
+  
+}
+.pageContainer{
+  margin: 17px 17px 17px 160px;
+}
+.sidebarPanel ul{
+  padding: 0;
+  margin: 36px 0;
+}
+.sidebarPanel .menu-Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 25px 0;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 20px;
+  transition: all .2s;
+}
+.sidebarPanel .menu-Item svg{margin-bottom: 9px;}
+.sidebarPanel .menu-Item.active{
+  background-color: #fff;
+  color: #000;
+  border-left: 12px solid #FB6900;
+}
+.sidebarPanel .menu-Item.active svg path{
+  fill: #536575;;
+}
+.dashPanelLeft::-webkit-scrollbar-track
+{
+ box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.dashPanelLeft::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.dashPanelLeft::-webkit-scrollbar-thumb
+{
+	background-color: #FB6900;
+}
+
+
+
+
+@media (max-width: 767px){
+  .dashPanelLeft{display: none;}
+  .pageContainer{margin: 0;}
+  .rightDetl{justify-content: space-between;}
+  .bell{margin-right: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
